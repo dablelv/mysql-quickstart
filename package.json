@@ -1,0 +1,28 @@
+{
+  "name": "mysql-quickstart",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "docs:dev": "vuepress dev vuepress-docs",
+    "docs:build": "vuepress build vuepress-docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dablelv/mysql-quickstart.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dablelv/mysql-quickstart/issues"
+  },
+  "homepage": "https://github.com/dablelv/mysql-quickstart#readme",
+  "devDependencies": {
+    "vuepress": "^1.9.10",
+    "vuepress-plugin-right-anchor": "^0.5.5"
+  },
+  "dependencies": {
+    "@vssue/api-github-v3": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.8"
+  }
+}

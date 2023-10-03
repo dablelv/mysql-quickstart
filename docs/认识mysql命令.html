@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>1.简介 | MySQL 快速上手</title>
+    <meta name="generator" content="VuePress 1.9.10">
+    <link rel="icon" href="/mysql-quickstart/favicon.png">
+    <meta name="description" content="一本助您快速上手 MySQL 的开源书籍">
+    <meta name="referrer" content="no-referrer">
+    
+    <link rel="preload" href="/mysql-quickstart/assets/css/0.styles.845ee8e1.css" as="style"><link rel="preload" href="/mysql-quickstart/assets/js/app.f5378632.js" as="script"><link rel="preload" href="/mysql-quickstart/assets/js/2.47618102.js" as="script"><link rel="preload" href="/mysql-quickstart/assets/js/1.7dca1d93.js" as="script"><link rel="preload" href="/mysql-quickstart/assets/js/45.c896988d.js" as="script"><link rel="prefetch" href="/mysql-quickstart/assets/js/10.a0685ac6.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/11.c3faa476.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/12.cbab1573.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/13.cb51eee8.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/14.c4e7a260.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/15.da36ffa2.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/16.9edb0efc.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/17.f68d5a9b.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/18.63fc1f32.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/19.d8597ed4.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/20.5e2f0b29.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/21.7d9a1c37.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/22.8df040d4.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/23.0855c971.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/24.15b16fe8.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/25.c6a40cf4.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/26.49117fb3.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/27.f3564404.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/28.cb4129a1.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/29.062b638e.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/3.dd9aca51.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/30.fae39cba.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/31.f273f112.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/32.480cefa3.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/33.482fe516.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/34.6b9dc265.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/35.3576577e.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/36.7411d66c.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/37.eda49b4a.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/38.b6a51b13.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/39.87373d85.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/4.f40b6ebb.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/40.052699dd.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/41.4dc0e149.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/42.bfc3d301.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/43.a035c498.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/44.0b0b78ba.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/46.3bbc9dbe.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/5.89082338.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/6.fa483029.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/7.2e6edd6b.js"><link rel="prefetch" href="/mysql-quickstart/assets/js/vendors~docsearch.80423ce8.js">
+    <link rel="stylesheet" href="/mysql-quickstart/assets/css/0.styles.845ee8e1.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/mysql-quickstart/" class="home-link router-link-active"><!----> <span class="site-name">MySQL 快速上手</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/mysql-quickstart/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人主页" class="dropdown-title"><span class="title">个人主页</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人主页" class="mobile-dropdown-title"><span class="title">个人主页</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dablelv" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他书籍" class="dropdown-title"><span class="title">其他书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他书籍" class="mobile-dropdown-title"><span class="title">其他书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/go-coding-advice" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Go 编码建议
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/backend-cmd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  后台开发命令365
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://book.douban.com/subject/33434575" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  C++ 进阶心法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dablelv/backend-cmd/mysql-quickstart/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/mysql-quickstart/" class="nav-link">
+  首页
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="个人主页" class="dropdown-title"><span class="title">个人主页</span> <span class="arrow down"></span></button> <button type="button" aria-label="个人主页" class="mobile-dropdown-title"><span class="title">个人主页</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.blog.csdn.net" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  CSDN
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://github.com/dablelv" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="其他书籍" class="dropdown-title"><span class="title">其他书籍</span> <span class="arrow down"></span></button> <button type="button" aria-label="其他书籍" class="mobile-dropdown-title"><span class="title">其他书籍</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/go-coding-advice" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Go 编码建议
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://dablelv.github.io/backend-cmd" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  后台开发命令365
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li><li class="dropdown-item"><!----> <a href="https://book.douban.com/subject/33434575" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  C++ 进阶心法
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></li></ul></div></div><div class="nav-item"><a href="https://github.com/dablelv/backend-cmd/mysql-quickstart/" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  Github
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <!----></nav>  <ul class="sidebar-links"><li><a href="/mysql-quickstart/" aria-current="page" class="sidebar-link">前言</a></li><li><a href="/mysql-quickstart/认识SQL.html" class="sidebar-link">认识 SQL</a></li><li><a href="/mysql-quickstart/认识MySQL.html" class="sidebar-link">认识 MySQL</a></li><li><a href="/mysql-quickstart/认识mysql命令.html" class="active sidebar-link">认识 mysql 命令</a></li><li><a href="/mysql-quickstart/连接MySQL.html" class="sidebar-link">连接 MySQL</a></li><li><a href="/mysql-quickstart/DCL数据控制.html" class="sidebar-link">DCL 数据控制</a></li><li><a href="/mysql-quickstart/DDL数据定义.html" class="sidebar-link">DDL 数据定义</a></li><li><a href="/mysql-quickstart/DML数据操作.html" class="sidebar-link">DML 数据操作</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>DQL 数据查询</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>TCL 事务控制</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/mysql-quickstart/索引.html" class="sidebar-link">索引</a></li><li><a href="/mysql-quickstart/约束.html" class="sidebar-link">约束</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>存储对象</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/mysql-quickstart/游标.html" class="sidebar-link">游标</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>字符集与排序规则</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/mysql-quickstart/特殊字符.html" class="sidebar-link">特殊字符</a></li><li><a href="/mysql-quickstart/常用函数.html" class="sidebar-link">常用函数</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="_1-简介"><a href="#_1-简介" class="header-anchor">#</a> 1.简介</h2> <p>mysql 是 MySQL 的命令行客户端，用于连接到 MySQL 服务器并执行 SQL 语句。</p> <p>它支持交互式和非交互式两种使用方式。以交互方式使用时，查询结果以 ASCII 表格式呈现。 当以非交互方式使用时（例如，作为过滤器），结果以制表符分隔的格式显示。 可以使用命令选项更改输出格式。</p> <p>mysql 命令格式：</p> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql <span class="token punctuation">[</span>OPTIONS<span class="token punctuation">]</span> DB_NAME
+</code></pre></div><p>比如</p> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql <span class="token parameter variable">-h</span> HOST_NAME <span class="token parameter variable">-u</span> USER_NAME <span class="token parameter variable">-p</span> DB_NAME
+
+<span class="token comment"># 或</span>
+mysql <span class="token parameter variable">--host</span><span class="token operator">=</span>HOST_NAME <span class="token parameter variable">--user</span><span class="token operator">=</span>USER_NAME <span class="token parameter variable">--password</span> DB_NAME
+</code></pre></div><p>使用选项 -p 或 --password 但不指定密码，在这种情况下，需要根据提示以交互的方式输入密码。</p> <p>成功连接服务器后，键入 SQL 语句并以<code>;</code>、<code>\g</code>或<code>\G</code>结尾，然后按 Enter 便可以交互方式执行 SQL 语句。退出交互会话键入 quit 或 exit 指令。</p> <p>当然，你也可以直接在命令行指定密码。但是这样做不太安全，因为这样会导致密码暴露在命令历史或进程列表中，存在安全风险，所以不推荐这么做。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token comment"># 注意选项与密码之间没有空格</span>
+<span class="token parameter variable">-pPWD</span>
+
+<span class="token comment"># 或</span>
+<span class="token parameter variable">--password</span><span class="token operator">=</span><span class="token environment constant">PWD</span>
+</code></pre></div><p>我们也可以将 SQL 语句写入脚本文件(批处理文件)中，通过 mysql 解析执行。</p> <div class="language-shell extra-class"><pre class="language-shell"><code>mysql DB_NAME <span class="token operator">&lt;</span> script.sql <span class="token operator">&gt;</span> output.tab
+</code></pre></div><p>MySQL 服务器缺省端口为 3306，如果需要指定其他端口，需要使用选项 -P 或 --port 指定。</p> <div class="language-shell extra-class"><pre class="language-shell"><code><span class="token parameter variable">-P</span> PORT_NUM
+<span class="token comment"># 或</span>
+<span class="token parameter variable">--port</span><span class="token operator">=</span>PORT_NUM
+</code></pre></div><h2 id="_2-选项"><a href="#_2-选项" class="header-anchor">#</a> 2.选项</h2> <p>除了前面介绍的连接数据库用到的相关选项外，mysql 命令有很多选项，这里列一些较为常用的选项。</p> <div class="language- extra-class"><pre class="language-text"><code>--help, -?
+	显示帮助信息并退出。
+--auto-rehash
+	启用自动重新哈希，缺省开启。当启用了--auto-rehash选项后，在输入命令时，MySQL客户端会自动为您提数据库、表和列名称的自动补全和提示，使得查询和使用数据库更加方便和高效。
+-A, --no-auto-rehash
+	禁用自动重新哈希。不对数据库、表与列名重新哈希，因此禁用了数据库、表和列名的自动补全功能，可以提高 mysql 启动速率。
+--auto-vertical-output
+	当结果集相对于当前窗口太宽时，自动转换水平输出为垂直输出。
+-B, --batch
+	使用制表符作为列分隔符打印结果，每行占一个新行。 使用此选项，mysql 不使用历史文件。mysql 命令交互过程会将用户的所有输入记录在一个隐藏文件 /root/.mysql_history。每次退出 mysql 交互模式时，会将交互过程中的所有命令操作一次性写入 ~/.mysql_history 隐藏文件中。下次执行 mysql 时，可以使用键盘的向上键获取历史命令。类似于 Shell 获取历史命令。该选项一般用于 Shell 脚本中执行 SQL 语句，命令行模式下需要交互指定 SQL 语句，故不使用该选项。
+-N, --skip-column-names
+	查询结果不输出列名。
+--database, -D DB_NAME
+	指定要使用的数据库。这主要在选项文件中有用。
+--default-character-set=CHARSET
+	设置默认的字符集。
+-e, --execute=STATEMENT
+	执行指定的 SQL 语句并退出。默认输出格式类似于使用 --batch 生成的格式。
+-E, --vertical
+	垂直打印输出行（每列值一行）。 如果没有此选项，您可以通过用 \G 终止各个语句来指定垂直输出。
+-t, --table
+	显示查询结果以表格形式输出。这是交互式使用的默认输出形式，但可用于以批处理模式生成表输出。
+-R, --raw
+	显示查询结果以原始格式输出。
+--show-warnings
+	如果有的话，会在每个语句后显示警告。 此选项适用于交互和批处理模式。
+--tee=FILE_NAME
+	将输出拷贝一份到给定文件。 此选项仅在交互模式下有效。
+-v, --verbose
+	显示详细的执行信息。
+-V, --version
+	显示版本信息并退出。
+</code></pre></div><p>使用<code>mysql --help</code>可查看更加详细的选项说明。当然也可以查看 mysql 命令手册（<code>man mysql</code>）或官方文档 <a href="https://dev.mysql.com/doc/refman/8.1/en/mysql-command-options.html" target="_blank" rel="noopener noreferrer">mysql Client Options<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>。</p> <p>命令行交互模式下一般为了快速启动会使用<code>-A</code>选项不对数据库、表与列名重新哈希。在 Shell 脚本使用 mysql 执行 SQL  语句时经常使用选项<code>-NBA</code>。</p> <h2 id="_3-子命令"><a href="#_3-子命令" class="header-anchor">#</a> 3.子命令</h2> <p>mysql 将您发出的每个 SQL 语句发送到服务器来执行。 还有一组mysql本身解释的命令。 要获取这些命令的列表，请在 mysql&gt; 提示符下键入 help 或 \h。</p> <div class="language- extra-class"><pre class="language-text"><code>?         (\?) Synonym for `help'.
+clear     (\c) Clear the current input statement.
+connect   (\r) Reconnect to the server. Optional arguments are db and host.
+delimiter (\d) Set statement delimiter.
+edit      (\e) Edit command with $EDITOR.
+ego       (\G) Send command to mysql server, display result vertically.
+exit      (\q) Exit mysql. Same as quit.
+go        (\g) Send command to mysql server.
+help      (\h) Display this help.
+nopager   (\n) Disable pager, print to stdout.
+notee     (\t) Don't write into outfile.
+pager     (\P) Set PAGER [to_pager]. Print the query results via PAGER.
+print     (\p) Print current command.
+prompt    (\R) Change your mysql prompt.
+quit      (\q) Quit mysql.
+rehash    (\#) Rebuild completion hash.
+source    (\.) Execute an SQL script file. Takes a file name as an argument.
+status    (\s) Get status information from the server.
+system    (\!) Execute a system shell command.
+tee       (\T) Set outfile [to_outfile]. Append everything into given outfile.
+use       (\u) Use another database. Takes database name as argument.
+charset   (\C) Switch to another charset. Might be needed for processing binlog with multi-byte charsets.
+warnings  (\W) Show warnings after every statement.
+nowarning (\w) Don't show warnings after every statement.
+resetconnection(\x) Clean session context.
+query_attributes Sets string parameters (name1 value1 name2 value2 ...) for the next query to pick up.
+ssl_session_data_print Serializes the current SSL session data to stdout or file.
+</code></pre></div><p>如果要获取服务器端帮助，请输入“help contents”。</p> <p>上面的子命令中，有几个常用的子命令需要关注一下。</p> <ul><li>? 和 help 查看子命令。</li> <li>ego (\G) 可将查询结果垂直输出，即每列单独一行输出。</li> <li>use (\u) 切换数据库。</li> <li>exit 和 quit 退出 mysql。</li></ul> <h2 id="_4-小结"><a href="#_4-小结" class="header-anchor">#</a> 4.小结</h2> <p>通过本篇文章，您已经了解了 MySQL 命令行工具 mysql 的基本用法、常用选项与子命令，比如通过 mysql 轻松连接数据库。</p> <p>通过 MySQL 命令行工具 mysql，我们可以以交互或非交互的方式与数据库建立连接，执行我们想要的操作。</p> <hr> <h2 id="参考文献"><a href="#参考文献" class="header-anchor">#</a> 参考文献</h2> <p><a href="https://dev.mysql.com/doc/refman/8.1/en/mysql.html" target="_blank" rel="noopener noreferrer">mysql — The MySQL Command-Line Client<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/mysql-quickstart/认识MySQL.html" class="prev">
+        认识 MySQL
+      </a></span> <span class="next"><a href="/mysql-quickstart/连接MySQL.html">
+        连接 MySQL
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----></div></div>
+    <script src="/mysql-quickstart/assets/js/app.f5378632.js" defer></script><script src="/mysql-quickstart/assets/js/2.47618102.js" defer></script><script src="/mysql-quickstart/assets/js/1.7dca1d93.js" defer></script><script src="/mysql-quickstart/assets/js/45.c896988d.js" defer></script>
+  </body>
+</html>
