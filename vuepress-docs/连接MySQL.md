@@ -43,3 +43,5 @@ SELECT VERSION();
 # 或
 SHOW VARIABLES LIKE "version";
 ```
+
+<Vssue title="连接MySQL" />

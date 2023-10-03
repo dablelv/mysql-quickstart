@@ -358,3 +358,5 @@ TRUNCATE 与 DELETE 均可以删除表记录，区别主要有如下几点：
 ---
 ## 参考文献
 [MySQL Data Definition Statements](https://dev.mysql.com/doc/refman/8.0/en/sql-data-definition-statements.html)
+
+<Vssue title="DDL数据定义" />

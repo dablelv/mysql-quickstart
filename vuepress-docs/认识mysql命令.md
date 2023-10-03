@@ -123,3 +123,5 @@ ssl_session_data_print Serializes the current SSL session data to stdout or file
 ---
 ## 参考文献
 [mysql — The MySQL Command-Line Client](https://dev.mysql.com/doc/refman/8.1/en/mysql.html)
+
+<Vssue title="认识mysql命令" />

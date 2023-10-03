@@ -192,3 +192,5 @@ mysql -h10.10.10.10 -ucrazyant -p123456 -P3306 -e "SELECT * FROM tbl_name WHERE 
 [MySQL 8.0 Reference Manual :: 13.2.2 DELETE Statement](https://dev.mysql.com/doc/refman/8.0/en/delete.html)
 
 [MySQL 8.0 Reference Manual :: 13.2.9 LOAD DATA Statement](https://dev.mysql.com/doc/refman/8.0/en/load-data.html)
+
+<Vssue title="DML数据操作" />

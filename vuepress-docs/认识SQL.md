@@ -137,3 +137,5 @@ SET CONSTRAINT - 启用或禁用外键约束
 [What Is SQL (Structured Query Language)? - Amazon AWS](https://aws.amazon.com/what-is/sql/)
 
 [An Introduction to SQL Standard（SQL标准简介）](https://zedware.github.io/SQL-Standard/)
+
+<Vssue title="认识SQL" />

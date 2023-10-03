@@ -179,3 +179,5 @@ USAGE: 只允许登录，其它什么也不允许做。
 ---
 ## 参考文献
 [Account Management Statements - MySQL](https://dev.mysql.com/doc/refman/8.1/en/account-management-statements.html)
+
+<Vssue title="DCL数据控制" />
