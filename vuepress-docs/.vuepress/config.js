@@ -45,7 +45,7 @@ module.exports = {
                   { text: 'C++ 进阶心法', link: 'https://book.douban.com/subject/33434575', target:'_blank' },
                 ]
               },
-              { text: 'Github', link: 'https://github.com/dablelv/backend-cmd/mysql-quickstart/'}
+              { text: 'Github', link: 'https://github.com/dablelv/mysql-quickstart/'}
         ],
         sidebarDepth:0,
         sidebar:[
