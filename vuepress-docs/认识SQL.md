@@ -1,5 +1,7 @@
 ﻿## 1.简介
-SQL（Structured Query Language，结构化查询语言）是一种用于管理和操作关系型数据库的标准化查询语言。它是一种领域特定语言（DSL，Domain Specific Language），用于定义数据库结构、插入、更新、删除以及查询数据等操作，并不局限于数据查询，在数据库管理领域得到广泛应用。
+SQL（Structured Query Language，结构化查询语言）是一种用于管理和操作关系型数据库的标准化查询语言。
+
+SQL 是一种领域特定语言（DSL，Domain Specific Language），用于定义数据库结构、插入、更新、删除以及查询数据等操作，并不局限于数据查询，在数据库管理领域得到广泛应用。
 
 SQL 最初由 IBM 的 Donald D. Chamberlin 和 Raymond F. Boyce 在 1970 年代初开发，在 1986 年成为 ANSI（美国国家标准学会）标准，并且在 1987 年成为 ISO（国际标准化组织）的标准。
 
