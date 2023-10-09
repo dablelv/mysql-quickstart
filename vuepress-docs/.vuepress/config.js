@@ -34,18 +34,18 @@ module.exports = {
                 text: '个人主页',
                 items: [
                   { text: 'CSDN', link: 'https://dablelv.blog.csdn.net', target:'_blank' },
-                  { text: 'Github', link: 'https://github.com/dablelv', target:'_blank' }
+                  { text: 'GitHub', link: 'https://github.com/dablelv', target:'_blank' }
                 ]
               },
               {
                 text: '其他书籍',
                 items: [
-                  { text: 'Go 编码建议', link: 'https://dablelv.github.io/go-coding-advice', target:'_blank' },
+                  { text: 'Go编码建议', link: 'https://dablelv.github.io/go-coding-advice', target:'_blank' },
                   { text: '后台开发命令365', link: 'https://dablelv.github.io/backend-cmd', target:'_blank' },
-                  { text: 'C++ 进阶心法', link: 'https://book.douban.com/subject/33434575', target:'_blank' },
+                  { text: 'C++进阶心法', link: 'https://book.douban.com/subject/33434575', target:'_blank' },
                 ]
               },
-              { text: 'Github', link: 'https://github.com/dablelv/mysql-quickstart/'}
+              { text: 'GitHub', link: 'https://github.com/dablelv/mysql-quickstart/'}
         ],
         sidebarDepth:0,
         sidebar:[
