@@ -136,10 +136,13 @@ SELECT * FROM [TABLE] INTO OUTFILE '[FILE]' FIELDS TERMINATED BY ',' OPTIONALLY 
 # 示例
 SELECT * FROM student INTO OUTFILE "student.csv";
 ```
-如果不指明输出文件的输出目录，默认输出至数据库文件的存储目录。可使用命令`find / -name student.csv`来查看具体位置。
+如果不指明文件的输出目录，默认输出至数据库文件的存储目录。可使用命令`find / -name student.csv`来查看具体位置。
 
-如果使用指定csv文件输出目录的话，报如下错误：
-`ERROR 1 (HY000): Can't create/write to file  (Errcode: 13)`，错误的原因是所在目录没有写权限，给所在的目录增加写权限即可。
+如果指定 CSV 文件的输出目录报了如下错误：
+```
+ERROR 1 (HY000): Can't create/write to file  (Errcode: 13)
+```
+错误的原因是所在目录没有写权限，给所在的目录增加写权限即可。
 
 （6）导入 CSV 文件。
 ```sql
@@ -173,7 +176,7 @@ MySQL客户端与服务端不在同一台主机时，即使用本 MySQL 客户�
 
 （8）导出远程 SELECT 结果集到本地。
 
-使用如下方法不可行，因为这个语句并不是在MySQL客户端，而是在MySQL服务器上执行的，通常用于服务器管理员在服务器机器上进行数据备份使用，由于MySQL客户端账号并没有访问服务器机器本身的权限，所以这个SQL执行不会成功。即使有权限，SELECT 结果集会被导出到MySQL服务端，而非本地。
+使用如下方法不可行，因为这个语句并不是在MySQL客户端执行，而是在MySQL服务器上执行，通常用于服务器管理员在服务器机器上进行数据备份使用。由于MySQL客户端账号并没有访问服务器机器本身的权限，所以这个SQL执行不会成功。即使有权限，SELECT 结果集会被导出到MySQL服务端，而非本地。
 ```shell
 mysql -h10.10.10.10 -ucrazyant -p123456 -P3306 -e "SELECT * FROM tbl_name WHERE condition INTO OUTFILE '/tmp/file.txt'"
 ```
